@@ -1,0 +1,189 @@
+:root * {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+    font-family: "Lucinda Grande", "Lucinda Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+}
+
+
+body {
+    display: flex;
+
+    justify-content: space-between;
+
+    background-color: #eeeeee;
+}
+
+
+.panel {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0;
+    min-width: 20vw;
+    max-width: 33vw;
+
+    height: 100vh;
+
+    background-color: #0c5e76;
+    color: #ffffff;
+}
+
+
+.panel:first-of-type {
+    border-radius: 0 20% 20% 0;
+}
+
+
+.panel:last-of-type {
+    border-radius: 20% 0 0 20%;
+}
+
+
+.panel .header {
+    padding: .4em .5em;
+
+    font-size: 1.25em;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.panel .content {
+    overflow-y: hidden;
+}
+
+
+.form-header, .form-subheader {
+    text-align: center;
+}
+
+
+.form-header {
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: .3em .1em;
+}
+
+
+.form-header:not(:first-child) {
+    margin-top: 1em;
+}
+
+
+.form-subheader {
+    text-transform: lowercase;
+    font-size: .87em;
+    margin-top: .5em;
+    padding: .3em .02em;
+}
+
+
+.form-row, .data-row {
+    display: flex;
+    align-items: center;
+
+}
+
+
+.form-row {
+    padding: .1em 1em;
+
+    font-size: .85em;
+}
+
+
+.form-row > * {
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+
+.form-row > :first-child {
+    flex-grow: 1;
+    margin-right: .5em;
+    text-align: right;
+    font-weight: bold;
+}
+
+
+.form-row label:not(:first-of-type) {
+    margin: 0 .25em;
+}
+
+
+.form-row input {
+    padding: .4em .1em;
+
+    border: 0;
+    border-radius: .1em;
+
+    outline-color: #ffffff;
+}
+
+
+.form-row input:first-of-type {
+    width: 12ch;
+}
+
+
+.form-row input:last-of-type {
+    width: 7ch;
+}
+
+
+.large-button {
+    margin-top: 1em;
+    padding: 1em .5em;
+    width: 100%;
+
+    border: 0;
+    outline: none;
+
+    background-color: #0f94b7;
+
+    font-weight: bold;
+    color: #ffffff;
+
+    cursor: pointer;
+}
+
+
+.large-button:hover {
+    background-color: #0e87a6;
+}
+
+
+#response {
+    flex-grow: 2;
+    flex-shrink: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.data-row {
+    padding: .1em 2.5em;
+
+    font-size: .93em;
+}
+
+
+.data-row > * {
+    flex-shrink: 0;
+}
+
+
+.data-row > :first-child {
+    flex-grow: 1;
+    font-weight: bold;
+}
+
+
+.data-row > :last-child {
+    flex-grow: 0;
+    font-size: .9em;
+    line-height: 2em;
+}
