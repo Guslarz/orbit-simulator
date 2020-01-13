@@ -88,3 +88,12 @@ function loadExample() {
     ]);
     loadFigure();
 }
+
+
+function scrollToElement(e, element) {
+    e.preventDefault();
+    document.getElementById('panel-container').style.left = -element.offsetLeft + 'px';
+    console.info(-element.offsetLeft + 'px');
+    document.getElementsByClassName('active')[0].classList.remove('active');
+    e.target.classList.add('active');
+}
