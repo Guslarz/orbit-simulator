@@ -80,7 +80,7 @@ body {
 #panel-container {
     display: flex;
     position: absolute;
-
+    left: 0;
     transition: left .5s;
 
     overflow: hidden;
