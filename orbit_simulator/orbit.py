@@ -1,7 +1,7 @@
 from .object import Object
 from .polar import Polar
 
-from scipy.constants import gravitational_constant as G, pi
+from scipy.constants import gravitational_constant as G
 from math import cos, sqrt, acos
 
 

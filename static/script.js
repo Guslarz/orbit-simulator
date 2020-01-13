@@ -48,7 +48,8 @@ function loadFigure() {
     loadingData();
     fetch('/backend', {
         method: 'POST',
-        body: new FormData(document.getElementById('form'))
+        body: new FormData(document.getElementById('form')),
+        cache: 'no-cache'
     }).then(res => {
         return res.json();
     }).then(res => {

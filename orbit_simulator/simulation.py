@@ -73,8 +73,8 @@ class Hyperbolic(SimulationIterator):
     def __init__(self, orbit: Orbit, delta_phi: int):
         super().__init__(orbit, delta_phi)
 
-        self.phi = 0
-        self.end_phi = pi + delta_phi
+        self.phi = orbit.phi0 + pi / 2
+        self.end_phi = orbit.phi0 + 2 * pi - pi / 2
 
     def set_next(self):
         self.current = self.next

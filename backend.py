@@ -1,11 +1,10 @@
 from orbit_simulator.object import Object
 from orbit_simulator.orbit import Orbit
-from orbit_simulator.simulation import Simulation, Elliptic
+from orbit_simulator.simulation import Simulation
 from orbit_simulator.vector import Vector
 
 from matplotlib import pyplot
 from matplotlib.backends.backend_agg import FigureCanvasAgg
-from typing import Iterable
 from io import BytesIO
 from base64 import b64encode
 
