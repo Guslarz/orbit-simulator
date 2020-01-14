@@ -33,7 +33,7 @@ body {
 
 
 #title {
-    font-size: 1.4em;
+    font-size: 1.5em;
     line-height: 1.5;
     font-weight: bold;
 }
@@ -47,7 +47,7 @@ body {
 
 
 .panel-button {
-    padding: .5em;
+    padding: .75em .5em;
     width: 12ch;
 
     background-color: #0f94b7;
@@ -79,7 +79,7 @@ body {
 
 #panel-container {
     display: flex;
-    position: absolute;
+    position: fixed;
     left: 0;
     transition: left .5s;
 
@@ -147,7 +147,8 @@ body {
 
 
 .form-row {
-    padding: .1em 1em;
+    padding: .1em .1em;
+    justify-content: center;
 
     font-size: .85em;
 }
@@ -160,7 +161,7 @@ body {
 
 
 .form-row > :first-child {
-    flex-grow: 1;
+    width: 6ch;
     margin-right: .5em;
     text-align: right;
     font-weight: bold;
@@ -221,6 +222,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+#response > img {
+    max-width: 100vw;
+    max-height: 100vh;
 }
 
 
