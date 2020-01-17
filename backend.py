@@ -2,6 +2,7 @@ from orbit_simulator.object import Object
 from orbit_simulator.orbit import Orbit
 from orbit_simulator.simulation import Simulation
 from orbit_simulator.vector import Vector
+from orbit_simulator.polar import Polar
 
 from matplotlib import pyplot
 from matplotlib.backends.backend_agg import FigureCanvasAgg
@@ -56,6 +57,8 @@ def get_response(sun_mass: float, planet_mass: float, planet_x: float, planet_y:
         width=0.01 * plot_unit,
         head_width=0.1 * plot_unit, head_length=0.1 * plot_unit
     )
+    # phi0_vector = Polar(orbit.r(0), orbit.phi0).to_vector()
+    # ax.plot([0, phi0_vector.x], [0, phi0_vector.y], '--')
 
     output = BytesIO()
     FigureCanvasAgg(fig).print_png(output)
