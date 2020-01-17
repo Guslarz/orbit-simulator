@@ -48,6 +48,7 @@ def get_response(sun_mass: float, planet_mass: float, planet_x: float, planet_y:
         ax.set_ylim(.9 * y_min, .9 * y_max)
     plot_unit = (x_max - x_min) / 10
 
+    """
     velocity_arrow = Vector(
         planet_vx, planet_vy
     ).unit_vector() * plot_unit
@@ -57,6 +58,7 @@ def get_response(sun_mass: float, planet_mass: float, planet_x: float, planet_y:
         width=0.01 * plot_unit,
         head_width=0.1 * plot_unit, head_length=0.1 * plot_unit
     )
+    """
     # phi0_vector = Polar(orbit.r(0), orbit.phi0).to_vector()
     # ax.plot([0, phi0_vector.x], [0, phi0_vector.y], '--')
 

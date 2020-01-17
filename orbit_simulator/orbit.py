@@ -32,10 +32,10 @@ class Orbit:
             tmp_phi = 1.0
         elif tmp_phi < -1.0:
             tmp_phi = -1.0
-        self.phi0 = -(
+        self.phi0 = (
             acos(
                 tmp_phi
-            ) + initial_position.phi
+            ) - initial_position.phi
         )
 
     def r(self, phi):
