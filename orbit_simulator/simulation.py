@@ -66,7 +66,7 @@ class Elliptic(SimulationIterator):
         self.phi += self.delta_phi
 
     def end(self):
-        return self.phi > 2 * pi
+        return self.phi > 2 * pi + self.delta_phi
 
 
 class Hyperbolic(SimulationIterator):
