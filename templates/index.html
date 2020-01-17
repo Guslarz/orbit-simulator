@@ -27,151 +27,153 @@
         </div>
     </div>
 
-    <div id="panel-container">
-        <div id="input-data" class="panel">
-            <div class="header">
-                WARTOŚCI
-            </div>
-            <div class="content">
-                <form id="form">
-                    <div class="form-header">
-                        Gwiazda
-                    </div>
 
-                    <div class="form-row">
-                        <label for="smm">
-                            Masa:
-                        </label>
-                        <input type="number" name="star_mass_m" id="smm" value="1"/>
-                        <label for="sme">
-                            &#183;10^
-                        </label>
-                        <input type="number" name="star_mass_e" id="sme" value="0"/>
-                    </div>
-
-                    <div class="form-header">
-                        Planeta
-                    </div>
-
-                    <div class="form-row">
-                        <label for="pmm">
-                            Masa:
-                        </label>
-                        <input type="number" name="planet_mass_m" id="pmm" value="1"/>
-                        <label for="pme">
-                            &#183;10^
-                        </label>
-                        <input type="number" name="planet_mass_e" id="pme" value="0"/>
-                    </div>
-
-                    <div class="form-subheader">
-                        Wektor położenia
-                    </div>
-
-                    <div class="form-row">
-                        <label for="ppxm">
-                            X:
-                        </label>
-                        <input type="number" name="planet_position_x_m" id="ppxm" value="1"/>
-                        <label for="ppxe">
-                            &#183;10^
-                        </label>
-                        <input type="number" name="planet_position_x_e" id="ppxe" value="0"/>
-                    </div>
-
-                    <div class="form-row">
-                        <label for="ppym">
-                            Y:
-                        </label>
-                        <input type="number" name="planet_position_y_m" id="ppym" value="1"/>
-                        <label for="ppye">
-                            &#183;10^
-                        </label>
-                        <input type="number" name="planet_position_y_e" id="ppye" value="0"/>
-                    </div>
-
-                    <div class="form-subheader">
-                        Wektor prędkości
-                    </div>
-
-                    <div class="form-row">
-                        <label for="pvxm">
-                            X:
-                        </label>
-                        <input type="number" name="planet_velocity_x_m" id="pvxm" value="1"/>
-                        <label for="pvxe">
-                            &#183;10^
-                        </label>
-                        <input type="number" name="planet_velocity_x_e" id="pvxe" value="0"/>
-                    </div>
-
-                    <div class="form-row">
-                        <label for="pvym">
-                            Y:
-                        </label>
-                        <input type="number" name="planet_velocity_y_m" id="pvym" value="1"/>
-                        <label for="pvye">
-                            &#183;10^
-                        </label>
-                        <input type="number" name="planet_velocity_y_e" id="pvye"value="0"/>
-                    </div>
-                </form>
-
-                <button id="load" class="large-button">
-                    WCZYTAJ
-                </button>
-
-                <button id="example" class="large-button">
-                    PRZYKŁAD
-                </button>
-            </div>
-        </div>
-
-        <div id="response" class="panel">
-            <img id="response-image" src="" alt=""/>
-        </div>
-
-        <div id="output-data" class="panel">
-            <div class="header">
-                DANE
-            </div>
-            <div id="info" class="content">
-                <div class="data-row">
-                    <div>
-                        Kształt:
-                    </div>
-                    <div id="shape">
-                        -
-                    </div>
+    <div id="panel-container-wrapper">
+        <div id="panel-container">
+            <div id="input-data" class="panel">
+                <div class="header">
+                    WARTOŚCI
                 </div>
-                <div class="data-row" title="Moduł momentu pędu">
-                    <div>
-                        L:
-                    </div>
-                    <div id="angular-momentum">
-                        -
-                    </div>
+                <div class="content">
+                    <form id="form">
+                        <div class="form-header">
+                            Gwiazda
+                        </div>
+
+                        <div class="form-row">
+                            <label for="smm">
+                                Masa:
+                            </label>
+                            <input type="number" name="star_mass_m" id="smm" value="1"/>
+                            <label for="sme">
+                                &#183;10^
+                            </label>
+                            <input type="number" name="star_mass_e" id="sme" value="0"/>
+                        </div>
+
+                        <div class="form-header">
+                            Planeta
+                        </div>
+
+                        <div class="form-row">
+                            <label for="pmm">
+                                Masa:
+                            </label>
+                            <input type="number" name="planet_mass_m" id="pmm" value="1"/>
+                            <label for="pme">
+                                &#183;10^
+                            </label>
+                            <input type="number" name="planet_mass_e" id="pme" value="0"/>
+                        </div>
+
+                        <div class="form-subheader">
+                            Wektor położenia
+                        </div>
+
+                        <div class="form-row">
+                            <label for="ppxm">
+                                X:
+                            </label>
+                            <input type="number" name="planet_position_x_m" id="ppxm" value="1"/>
+                            <label for="ppxe">
+                                &#183;10^
+                            </label>
+                            <input type="number" name="planet_position_x_e" id="ppxe" value="0"/>
+                        </div>
+
+                        <div class="form-row">
+                            <label for="ppym">
+                                Y:
+                            </label>
+                            <input type="number" name="planet_position_y_m" id="ppym" value="1"/>
+                            <label for="ppye">
+                                &#183;10^
+                            </label>
+                            <input type="number" name="planet_position_y_e" id="ppye" value="0"/>
+                        </div>
+
+                        <div class="form-subheader">
+                            Wektor prędkości
+                        </div>
+
+                        <div class="form-row">
+                            <label for="pvxm">
+                                X:
+                            </label>
+                            <input type="number" name="planet_velocity_x_m" id="pvxm" value="1"/>
+                            <label for="pvxe">
+                                &#183;10^
+                            </label>
+                            <input type="number" name="planet_velocity_x_e" id="pvxe" value="0"/>
+                        </div>
+
+                        <div class="form-row">
+                            <label for="pvym">
+                                Y:
+                            </label>
+                            <input type="number" name="planet_velocity_y_m" id="pvym" value="1"/>
+                            <label for="pvye">
+                                &#183;10^
+                            </label>
+                            <input type="number" name="planet_velocity_y_e" id="pvye"value="0"/>
+                        </div>
+                    </form>
+
+                    <button id="load" class="large-button">
+                        WCZYTAJ
+                    </button>
+
+                    <button id="example" class="large-button">
+                        PRZYKŁAD
+                    </button>
                 </div>
-                <div class="data-row" title="Energia całkowita">
-                    <div>
-                        E:
-                    </div>
-                    <div id="energy">
-                        -
-                    </div>
+            </div>
+
+            <div id="response" class="panel">
+                <img id="response-image" src="" alt=""/>
+            </div>
+
+            <div id="output-data" class="panel">
+                <div class="header">
+                    DANE
                 </div>
-                <div class="data-row" title="Ekscentryczność">
-                    <div>
-                        &epsi;:
+                <div id="info" class="content">
+                    <div class="data-row">
+                        <div>
+                            Kształt:
+                        </div>
+                        <div id="shape">
+                            -
+                        </div>
                     </div>
-                    <div id="eccentricity">
-                        -
+                    <div class="data-row" title="Moduł momentu pędu">
+                        <div>
+                            L:
+                        </div>
+                        <div id="angular-momentum">
+                            -
+                        </div>
+                    </div>
+                    <div class="data-row" title="Energia całkowita">
+                        <div>
+                            E:
+                        </div>
+                        <div id="energy">
+                            -
+                        </div>
+                    </div>
+                    <div class="data-row" title="Ekscentryczność">
+                        <div>
+                            &epsi;:
+                        </div>
+                        <div id="eccentricity">
+                            -
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
 
     <script>
         document.getElementById('load').onclick = e => {
