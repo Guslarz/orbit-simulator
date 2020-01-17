@@ -2,6 +2,7 @@ from .orbit import Orbit
 from .polar import Polar
 
 from scipy.constants import pi
+from math import acos
 
 
 class Simulation:
@@ -73,8 +74,8 @@ class Hyperbolic(SimulationIterator):
     def __init__(self, orbit: Orbit, delta_phi: int):
         super().__init__(orbit, delta_phi)
 
-        self.phi = orbit.phi0 + pi / 2
-        self.end_phi = orbit.phi0 + 2 * pi - pi / 2
+        self.phi = self.orbit.phi0 + pi / 2 + pi / 4
+        self.end_phi = self.orbit.phi0 + 3 * pi / 2 - pi / 4
 
     def set_next(self):
         self.current = self.next

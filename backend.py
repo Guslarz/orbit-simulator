@@ -18,7 +18,7 @@ def get_response(sun_mass: float, planet_mass: float, planet_x: float, planet_y:
         velocity=(planet_vx, planet_vy)
     )
     orbit = Orbit(sun, planet)
-    simulation = Simulation(orbit, delta_phi=0.01)
+    simulation = Simulation(orbit, delta_phi=0.001)
 
     x, y = [], []
     for vector in simulation:
