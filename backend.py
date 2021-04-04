@@ -37,7 +37,6 @@ def get_response(sun_mass: float, planet_mass: float, planet_x: float, planet_y:
     fig.patch.set_facecolor('#eeeeee')
 
     ax.plot(x, y)
-
     ax.plot(0, 0, 'ro')
     ax.plot(planet_x, planet_y, 'bo')
 
