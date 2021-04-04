@@ -27,6 +27,7 @@ class Orbit:
         initial_position = Polar.from_vector(
             planet.position - sun.position
         )
+        
         tmp_phi = (self.p / initial_position.r - 1.0) / self.e
         if tmp_phi > 1.0:
             tmp_phi = 1.0
