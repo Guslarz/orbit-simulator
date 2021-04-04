@@ -83,6 +83,7 @@ class Hyperbolic(SimulationIterator):
             self.orbit.r(self.phi),
             self.phi
         )
+        
         self.next = next_polar.to_vector()
         self.phi += self.delta_phi
 
